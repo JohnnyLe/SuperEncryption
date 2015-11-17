@@ -14,7 +14,7 @@ SuperEncryption is lightweight and powerful library for encryption &amp; decrypt
  - Requires commons-codec-1.3.jar
  
 ## How to use
- - Please check in example code, very simple to use
+ - Please check in example code https://github.com/JohnnyLe/SuperEncryption/tree/master/Example, It's very simple to use
  ```java
  public static void main(String[] args) throws IOException {
         // input file path to encrypt
