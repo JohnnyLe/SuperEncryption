@@ -34,12 +34,12 @@ SuperEncryption is lightweight and powerful library for encryption &amp; decrypt
  ```
  
  - Using with command line 
-  - Encrypt file (-i: Input file path, -o: output file path)
+  - Encrypt file (-i: Input file path, -o: output file path), or quick run with BAT file TestEncrypt.bat
 ```java
 java -jar SuperEncryption-1.0.jar -encrypt -i D:\\Project\\SuperEncryption\\Example\\testmp4.mp4 -o D:\\Project\\SuperEncryption\\Example
 ```
 
-  - Decrypt file (-i: Input file path, -o: output file path)
+  - Decrypt file (-i: Input file path, -o: output file path), or quick run with BAT file TestDecrypt.bat
 ```java
 java -jar SuperEncryption-1.0.jar -decrypt -i D:\\Project\\SuperEncryption\\Example\\testmp4.mp4.encrypted -o D:\\Project\\SuperEncryption\\Example
 ```
