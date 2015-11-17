@@ -14,7 +14,7 @@ SuperEncryption is lightweight and powerful library for encryption &amp; decrypt
  - Requires commons-codec-1.3.jar
  
 ## How to use
- - Please check in example code https://github.com/JohnnyLe/SuperEncryption/tree/master/Example, It's very simple to use
+ - Just included 2 file jars ```SuperEncryption-1.0.jar``` & ```commons-codec-1.3.jar``` into your project. Please check in example code at https://github.com/JohnnyLe/SuperEncryption/tree/master/Example, It's very simple to use
  ```java
  public static void main(String[] args) throws IOException {
         // input file path to encrypt
@@ -49,5 +49,6 @@ java -jar SuperEncryption-1.0.jar -decrypt -i D:\\Project\\SuperEncryption\\Exam
  - Contribute
   - For any question/ bug or feedback please feel free to open issue at https://github.com/JohnnyLe/SuperEncryption/issues 
 
- - License 
-  - Free version available in github just allow encrypt file up to 5 Mb, for full version please contact.
+ - Version Available 
+  - Free version available in github just allow encrypt file up to 5 Mb and static encrypt key
+  - Full version (please contact): Unlimited encryption file size, auto scale Blok bytes encryption, dynamic public & secret key support, dynamic encrypt layer support.
