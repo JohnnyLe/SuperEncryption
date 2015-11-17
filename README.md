@@ -49,5 +49,6 @@ java -jar SuperEncryption-1.0.jar -decrypt -i D:\\Project\\SuperEncryption\\Exam
  - Contribute
   - For any question/ bug or feedback please feel free to open issue at https://github.com/JohnnyLe/SuperEncryption/issues 
 
- - License 
-  - Free version available in github just allow encrypt file up to 5 Mb, for full version please contact.
+ - Version Available 
+  - Free version available in github just allow encrypt file up to 5 Mb and static encrypt key
+  - Full version (please contact): Unlimited encryption file size, auto scale Blok bytes encryption, dynamic public & secret key support, dynamic encrypt layer support.
