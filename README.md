@@ -2,12 +2,12 @@
 SuperEncryption is lightweight and powerful library for encryption &amp; decryption digital content, support any file type from Movie, Audio to eBook, document etc.
 
 ## Key Features
- - Support any file type (from movie, audio, ebook, document ...)
- - High security with AES Encryption algorithm https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
- - High performance encryption & decryption (3 - 4 seconds for encrypt & decrypt file over 100 Mb)
- - Lightweight and powerful library built from scratch support from JAVA 1.7, so can use both in Server & Mobile client or port to other language. 
- - Optimized memory usage for encryption & decryption
- - Encryption file size does not increase compare with original file (Due to multiple block bytes have been compressed during encryting)
+- Support any file type (from movie, audio, ebook, document ...)
+- High security with AES Encryption algorithm
+- High performance encryption & decryption (tested encrypt & decrypt mp4 file 160 Mb in 5 seconds)
+- Lightweight and powerful library built from scratch, so can use both in Server & Mobile client or re-write to other language.
+- Optimized memory usage for encryption & decryption
+- Encryption file size does not increase compare with original file size (Due to multiple block bytes have been compressed during encrypting)
  
  ## Library Dependency 
  - Requires Java Cryptography Extension enable http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html
