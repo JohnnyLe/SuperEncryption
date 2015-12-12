@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encrypt & Decrypt file</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style type="text/css">
+            form {
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+            .error {
+                color: #ff0000;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h3 style='text-align: center;'>Demo <a href='https://github.com/JohnnyLe/SuperEncryption' target='_blank'>SuperEncryption</a> Library</h3>
+            <div class="row" style="padding-top: 50px;">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-offset-3">
+                    <ul class="nav nav-tabs" role="tablist" id="myTab">
+                        <li class="active"><a href="#encrypt" role="tab" data-toggle="tab">Encrypt your file</a></li>
+                        <li><a href="#decrypt" role="tab" data-toggle="tab">Decrypt your file</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="encrypt" ng-controller="EncryptController">
+
+                            <label>Choose file to encrypt</label>
+                            <br/>
+                            <form ng-submit="uploadFile()" id="uploadForm" enctype="multipart/form-data" class="form-inline" role="form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="">Choose file to upload</label>
+                                    <input ng-disabled="handling" file-model="myFile" name="file" type="file" class="form-control" id="" placeholder="Choose file...">
+                                </div>
+
+                                <button ng-disabled="handling" type="submit" class="btn btn-primary">Encrypt</button>
+                            </form>
+
+                            <span ng-show="handling">File is encrypting...</span>
+                            <span ng-hide="uploader.success" class="error">{{uploader.mess}}</span>
+                            <a ng-show="uploader.success" href="{{uploader.url}}">Done! Download your encrypted file here</a>
+
+                        </div>
+                        <div class="tab-pane" id="decrypt" ng-controller="DecryptController">
+
+                            <label>Choose file to decrypt, input file must be encrypted format</label>
+                            <br/>
+                            <form ng-submit="uploadFile()" id="uploadForm" enctype="multipart/form-data" class="form-inline" role="form">
+
+                                <div class="form-group">
+                                    <label class="sr-only" for="">Choose file to upload</label>
+                                    <input ng-disabled="handling" file-model="myFile" name="file" type="file" class="form-control" id="" placeholder="Choose file...">
+                                </div>
+
+                                <button ng-disabled="handling" type="submit" class="btn btn-primary">Decrypt</button>
+                            </form>  
+
+                            <span ng-show="handling">File is decrypting...</span>
+                            <span ng-hide="uploader.success" class="error">{{uploader.mess}}</span>
+                            <a ng-show="uploader.success" href="{{uploader.url}}">Done! Download your decrypted file here</a>                           
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<br/>
+		</div>
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller/file_controller.js"></script>
+        <script src="js/service/file_service.js"></script>
+      
+    </body>
+</html>
