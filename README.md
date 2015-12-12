@@ -1,4 +1,6 @@
 # SuperEncryption
+
+[![Join the chat at https://gitter.im/JohnnyLe/SuperEncryption](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JohnnyLe/SuperEncryption?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 SuperEncryption is lightweight and powerful library for encryption &amp; decryption digital content, support any file type from Movie, Audio to eBook, document etc.
 
 ## Key Features
