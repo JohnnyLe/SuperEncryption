@@ -12,6 +12,9 @@ SuperEncryption is lightweight and powerful library for encryption &amp; decrypt
  ## Library Dependency 
  - Requires Java Cryptography Extension enable http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html
  
+## Online Demo
+- http://johnnyle.github.io/SuperEncryption
+
 ## How to use
  - Just included jar library ```SuperEncryption-1.0.jar``` into your project. Please check in example code at https://github.com/JohnnyLe/SuperEncryption/tree/master/Example, It's very simple to use
  ```java
