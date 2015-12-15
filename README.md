@@ -9,8 +9,8 @@ SuperEncryption is lightweight and powerful library for encryption &amp; decrypt
 - Optimized memory usage for encryption & decryption
 - Encryption file size does not increase compare with original file size (Due to multiple block bytes have been compressed during encrypting)
  
- ## Library Dependency 
- - Requires Java Cryptography Extension enable http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html
+## Library Dependency 
+- Requires Java Cryptography Extension enable http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html
  
 ## Online Demo
 - http://johnnyle.github.io/SuperEncryption
