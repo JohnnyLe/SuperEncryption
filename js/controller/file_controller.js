@@ -1,9 +1,12 @@
 App.controller('EncryptController', ['$scope', 'fileUpload', function ($scope, fileUpload) {
 
+        
         $scope.uploadFile = function () {
-            $scope.uploader = {};
-            $scope.handling = true;
-            fileUpload.uploadFileEncrypt($scope.myFile).then(
+            if($scope.encrypt_key)
+            {
+               $scope.uploader = {};
+               $scope.handling = true;  
+              fileUpload.uploadFileEncrypt($scope.myFile,$scope.encrypt_key).then(
                     function (d) {
                         $scope.uploader = d.data;
                         $scope.handling = false;
@@ -12,15 +15,20 @@ App.controller('EncryptController', ['$scope', 'fileUpload', function ($scope, f
                         console.log(d);
                         $scope.handling = false;
                     });
+           }
+           else
+             alert('Please input encrypt KEY');
         };
 
     }]);
 App.controller('DecryptController', ['$scope', 'fileUpload', function ($scope, fileUpload) {
 
         $scope.uploadFile = function () {
-            $scope.uploader = {};
-            $scope.handling = true;
-            fileUpload.uploadFileDecrypt($scope.myFile).then(
+            if($scope.decrypt_key)
+            {
+                $scope.uploader = {};
+                $scope.handling = true;
+                fileUpload.uploadFileDecrypt($scope.myFile, $scope.decrypt_key).then(
                     function (d) {
                         $scope.uploader = d.data;
                         $scope.handling = false;
@@ -29,6 +37,9 @@ App.controller('DecryptController', ['$scope', 'fileUpload', function ($scope, f
                         console.log(d);
                         $scope.handling = false;
                     });
+           }
+           else
+            alert('Please input decrypt KEY');
         };
 
     }]);

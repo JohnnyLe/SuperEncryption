@@ -34,8 +34,12 @@
                                 <div class="form-group">
                                     <label class="sr-only" for="">Choose file to upload</label>
                                     <input ng-disabled="handling" file-model="myFile" name="file" type="file" class="form-control" id="" placeholder="Choose file...">
+
+                                     <input type="text" ng-model="encrypt_key" class="form-control" placeHolder="input encrypt key">
                                 </div>
 
+                                <div><br/></div>
+                               
                                 <button ng-disabled="handling" type="submit" class="btn btn-primary">Encrypt</button>
                             </form>
 
@@ -53,7 +57,10 @@
                                 <div class="form-group">
                                     <label class="sr-only" for="">Choose file to upload</label>
                                     <input ng-disabled="handling" file-model="myFile" name="file" type="file" class="form-control" id="" placeholder="Choose file...">
+
+                                     <input type="text" ng-model="decrypt_key" class="form-control" placeHolder="input decrypt key">
                                 </div>
+                                 <div><br/></div>
 
                                 <button ng-disabled="handling" type="submit" class="btn btn-primary">Decrypt</button>
                             </form>  
@@ -71,17 +78,9 @@
 		</div>
 		
 <div style="width:100%; text-align:center">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Top Banner -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:320px;height:100px"
-     data-ad-client="ca-pub-3428491770123884"
-     data-ad-slot="3366994057"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
-		</div>
+
+</div>
 
 		
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -91,6 +90,18 @@
         <script src="js/controller/file_controller.js"></script>
         <script src="js/service/file_service.js"></script>
 		
+		
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72040220-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
       
     </body>
 </html>

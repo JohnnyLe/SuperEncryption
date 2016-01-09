@@ -1,10 +1,14 @@
 App.factory('fileUpload', ['$http', function ($http) {
 
+        var server='http://54.69.192.23/encryption/encrypt/';
+        //var server='http://localhost:8080/EncryptDecryptFile/';
+
         return {
-            uploadFileEncrypt: function (file) {
+            uploadFileEncrypt: function (file, key) {
+                console.log("encrypt key:"+key)
                 var fd = new FormData();
                 fd.append('file', file);
-                return $http.post("http://54.69.192.23/encryption/encrypt", fd, {
+                return $http.post(server + 'encrypt/'+ key, fd, {
                     transformRequest: angular.identity,
                     headers: {'Content-Type': undefined}
                 }).then(
@@ -16,10 +20,11 @@ App.factory('fileUpload', ['$http', function ($http) {
                         }
                 );
             },
-            uploadFileDecrypt: function (file) {
+            uploadFileDecrypt: function (file, key) {
+                console.log("descrypt key:"+ key);
                 var fd = new FormData();
                 fd.append('file', file);
-                return $http.post("http://54.69.192.23/encryption/decrypt", fd, {
+                return $http.post(server + 'decrypt/' + key, fd, {
                     transformRequest: angular.identity,
                     headers: {'Content-Type': undefined}
                 }).then(
