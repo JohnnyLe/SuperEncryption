@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import net.superencryption.Decrypter;
@@ -25,22 +26,21 @@ import net.superencryption.model.EncryptMeta;
  */
 public class Main {
 
+    private static Encrypter encrypter=new Encrypter();
+    private static Decrypter decrypter=new Decrypter();
+    // AES Encrypttion key, could be changed dynamic as you needs
+    private static String key="kmP45pYv8Og9H39ZrShz3IsxVSfKI5iM";
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        // input file path to encrypt
-        String pathFileInut="D:\\Project\\SuperEncryption\\Example\\testmp4.mp4";
-        // output path for encrypted file
-        String outputPath="D:\\Project\\SuperEncryption\\Example";
-        
-        // input file path to decode
-        String pathFilDecode="D:\\Project\\SuperEncryption\\Example\\testmp4.mp4.encrypted";
-        // Call encrypt file
-        new Encrypter().docEncrypt(pathFileInut, outputPath);
-        
-        // Call decrypt file
-        new Decrypter().docDecrypt(pathFilDecode, outputPath);
+        String inputPath = "D:/TESTFILE/test.pptx";
+        String outputPath = "D:/TESTFILE/";
+        long sratTime=new Date().getTime();
+        EncryptMeta metadata=encrypter.docEncrypt(inputPath, outputPath, key);
+        String fileName=decrypter.docDecrypt("D:/TESTFILE/test.encrypted", outputPath, key);
+        long timeSpend = (new Date().getTime() - sratTime) / 1000;
+        System.out.println("Time encrypting file:" + timeSpend + " seconds");
 
     }    
     
