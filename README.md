@@ -9,9 +9,12 @@ SuperEncryption is lightweight and powerful library for encryption &amp; decrypt
 - Optimized memory usage for encryption & decryption
 - Encryption file size does not increase compare with original file size (Due to multiple block bytes have been compressed during encrypting)
  
- ## Library Dependency 
- - Requires Java Cryptography Extension enable http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html
+## Library Dependency 
+- Requires Java Cryptography Extension enable http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html
  
+## Online Demo
+- http://johnnyle.github.io/SuperEncryption
+
 ## How to use
  - Just included jar library ```SuperEncryption-1.0.jar``` into your project. Please check in example code at https://github.com/JohnnyLe/SuperEncryption/tree/master/Example, It's very simple to use
  ```java
@@ -51,3 +54,6 @@ java -jar SuperEncryption-1.0.jar -decrypt -i D:\\Project\\SuperEncryption\\Exam
  - Version Available 
   - Free version available in github just allow encrypt file up to 5 Mb and static encrypt key
   - Full version (please contact): Unlimited encryption file size, auto scale Blok bytes encryption, dynamic public & secret key support, dynamic encrypt layer support.
+
+Let's chat 
+	<p><a href="https://gitter.im/JohnnyLe/SuperEncryption" target="_blank"><img src="https://camo.githubusercontent.com/da2edb525cde1455a622c58c0effc3a90b9a181c/68747470733a2f2f6261646765732e6769747465722e696d2f4a6f696e253230436861742e737667" alt="Join the chat" data-canonical-src="https://badges.gitter.im/Join%20Chat.svg" style="max-width:100%;"></a></p>
