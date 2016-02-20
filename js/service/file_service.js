@@ -1,6 +1,6 @@
 App.factory('fileUpload', ['$http', function ($http) {
 
-        var server='http://52.24.80.193:8080/encryption/';
+        var server='http://52.27.148.231/encryption/';
         //var server='http://localhost:8080/EncryptDecryptFile/';
 
         return {
